@@ -6,7 +6,9 @@
     "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "touch out/.nojekyll",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
@@ -17,5 +19,8 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

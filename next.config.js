@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
-  reactStrictMode: true,
-}
+const repo = 'PassLeak';
 
-module.exports =  {
-  assetPrefix: './',
-  basePath: '/PassLeak',
+
+const nextConfig = {
+  output: 'export',
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
   trailingSlash: true,
-}
+  images: {
+    unoptimized: true,
+  },
+};
+
+module.exports = nextConfig;
