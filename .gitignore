@@ -1,0 +1,11 @@
+# Git
+.git/
+
+# Node
+node_modules/
+
+# Next
+.next/
+
+# IDEs
+.idea/
